@@ -11,7 +11,14 @@ const Favourites = () => {
 
   return <div>
     {favourites.map((favourite)=>{
-      return <h3>{favourite.title}</h3>
+      return (
+        <>
+<h3>{favourite.title}</h3>
+<p>{favourite.company_name}</p>
+<p>{favourite.category}</p>
+</>
+
+      )
     })}
   </div>;
 };

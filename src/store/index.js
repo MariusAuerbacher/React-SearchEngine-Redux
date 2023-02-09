@@ -5,6 +5,7 @@ const initialState = {
 }
 
 const favouriteReducer = (state = initialState, action) => {
+      // eslint-disable-next-line eqeqeq
       if(action.type == "ADD_FAVOURITE"){
         const newFavourites = [...state.favourites, action.payload]
         
